@@ -1,0 +1,30 @@
+.virtual-list {
+  position: relative;
+  overflow: auto;
+  border: 1px solid #ddd;
+  &:hover {
+    will-change: transform;
+  }
+  .virtual-list-height {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .view-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    .view-item {
+      display: flex;
+      align-items: center;
+      height: 66px;
+      border-bottom: 1px solid #eee;
+      padding-left: 10px;
+    }
+  }
+}
